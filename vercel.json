@@ -12,12 +12,16 @@
   ],
   "routes": [
     {
-      "src": "/(.*\\.(webp|png|jpg|jpeg|svg|css|js|ico))",
-      "dest": "/public/$1"
+      "src": "/images/(.*)",
+      "dest": "/public/images/$1"
+    },
+    {
+      "src": "/stylesheets/(.*)",
+      "dest": "/public/stylesheets/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "/app.js"
     }
   ]
 }
